@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -45,15 +44,11 @@ export const Banner = () => {
     return (
         <section className="banner" id="home">
             <Container>
-                <Row className="aligh-items-center">
+                <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{`Hi I'm a Noureldin `}<span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                        <h1>{`What's up I'm Nour, `}<span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perspiciatis atque alias nihil labore, dolores quidem dolore quas, doloribus libero repellat voluptas totam non vero harum est consectetur ut in?</p>
                         <button>Let's connect <ArrowRightCircle size={25} /></button>
-                    </Col>
-                    <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="Header Img"/>
                     </Col>
                 </Row>
             </Container>

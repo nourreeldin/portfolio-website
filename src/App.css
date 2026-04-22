@@ -239,7 +239,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;      /* vertical center */
+  justify-content: center;  /* horizontal center */
+  text-align: center;       /* center text */
 }
+
+.banner .row {
+  justify-content: center;
+}
+
+.banner .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -259,20 +275,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #fff;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  width: 96%;
+  margin-left: 100px;
+  width: 70%;
 }
 .banner button {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 60px;
   letter-spacing: 0.8px;
-  display: flex;
+
+  display: inline-flex;   
   align-items: center;
+  justify-content: center;
 }
 .banner button svg {
   font-size: 25px;
